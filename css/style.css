@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Inter:wght@400;600;700&display=swap');
+html, body, figure, img, button,div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul,li, a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;;
+    color: #000;
+    outline: none;  
+}
+body{
+    height: 100vh;
+    background-color:white
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    padding: 15px;
+    background:white;
+    box-shadow: 0px 4px 40px -15px rgba(0, 0, 0, 0.25);
+}
+nav{
+    display: flex;
+    width: 35%;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.acessorios:hover{
+    color: #37268C;
+}
+.calcados:hover{
+    color: #37268C;
+}
+.camisetas:hover{
+    color: #37268C;
+}
+.todos{
+    font-weight: bold;
+}
+.todos:hover{
+    font-weight: lighter;
+    color: #37268C;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    height: 100%;
+}
+aside{
+    
+    
+    padding: 10px 0px 0px 10px;
+   
+}
+.containerVitrine{
+ display: flex;  
+ width: 100%; 
+
+}
+.vitrine{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 70%;
+    padding: 10px;
+}
+.listaVitrine{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.listaVitrine li { 
+    max-width: 32%;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0px 4px 40px -20px rgb(0 0 0 / 25%);
+    border-radius: 4px;
+}
+.listaVitrine div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.listaVitrine :hover{
+    box-shadow: 0px 4px 40px -20px rgba(0, 0, 0, 20);
+}
+
+.listaVitrine img{
+    height: 65%;
+    width: 65%;
+    margin-bottom: 15px;
+}
+.listaVitrine h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.listaVitrine strong{
+color:#37268C
+}
+.listaVitrine a{
+    background-color: rgba(46, 36, 94, 1);
+    color: #f8f8f8;
+    font-size: 16px;
+    padding: 2px;
+    margin-bottom: 15px;
+    
+}
+.listaVitrine p{
+    font-style:normal;
+    font-size: 14px;
+    line-height: 24px;
+    line-height: 142%;
+    text-align: Left;
+    vertical-align: Top;
+    margin-bottom: 15px;
+}
+div#btnCarrinho{
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+}
+.listaVitrine button{
+    border: transparent solid 1px;
+}
+.listaVitrine button:hover{
+    border: #37268C solid 1px;
+}
+.campoBusca{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+}
+.campoBusca input{
+    border: none;
+    width: 100%;
+}
+.campoBusca button{
+    border: none;
+    background-color: #37268C;
+    color: #ffffff;
+    padding: 7px;
+    font-size: 17px;
+}
+.carrinhoDeCompas{
+    display: block;
+    box-shadow: 0px 4px 40px -20px rgba(34, 33, 33, 0.25);
+    padding-top: 7px;
+}
+.carrinhoDeCompas h1{
+    font-size: 18px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 1);
+    background-color: #37268C;
+    text-align: center;
+    padding: 5px;
+
+}
+.carrinhoDeCompas ul{
+    display: block;
+    padding: 10px;
+    overflow-y: scroll;
+    max-height: 345px;
+    box-shadow: 0px 4px 40px -20px rgb(243 6 6 / 25%);
+    border-radius: 5px;
+}
+.carrinhoDeCompas li{
+    display: flex;
+    justify-content: space-around;
+}
+.carrinhoDeCompas img{
+    width: 80px;
+    height: 80px;
+}
+.carrinhoDeCompas h3{
+    font-size: 16px;
+}
+.carrinhoDeCompas p{
+    color: #37268C;
+    font-size: 14px;
+    font-weight: bold;
+}
+.carrinhoDeCompas button{
+    border: transparent solid 1px;
+}
+.carrinhoDeCompas button:hover{
+   border: #37268C solid 1px;
+}
+.carrinhoQuantidade{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px;
+}
+.carrinhoQuantidade h3{
+    font-size: 16px;
+    font-weight: normal;
+    color: #f8f8f8;
+}
+.carrinhoQuantidade p{
+    font-size: 16px;
+    color: #f8f8f8;
+    font-weight: normal;
+}
+.carrinhoTotal{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px;
+}
+.carrinhoTotal h3{
+    font-size: 16px;
+    font-weight: normal;
+    color: #f8f8f8;
+}
+.carrinhoTotal p{
+    font-size: 16px;
+    color: #f8f8f8;
+    font-weight: normal
+}   
+
