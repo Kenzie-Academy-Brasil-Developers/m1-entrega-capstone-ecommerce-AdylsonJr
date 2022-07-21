@@ -61,6 +61,7 @@ main{
     flex-wrap: nowrap;
     align-content: center;
     height: 100%;
+    width: 100%;
 }
 aside{
     
@@ -104,7 +105,7 @@ aside{
     justify-content: center;
     margin-bottom: 5px;
 }
-.listaVitrine :hover{
+.listaVitrine li:hover{
     box-shadow: 0px 4px 40px -20px rgba(0, 0, 0, 20);
 }
 
@@ -138,7 +139,7 @@ color:#37268C
     vertical-align: Top;
     margin-bottom: 15px;
 }
-div#btnCarrinho{
+.btnCarrinho{
     display: flex;
     justify-content: flex-start;
     margin: 5px;
@@ -171,16 +172,17 @@ div#btnCarrinho{
     box-shadow: 0px 4px 40px -20px rgba(34, 33, 33, 0.25);
     padding-top: 7px;
 }
-.carrinhoDeCompas h1{
+.carrinhoDeCompras h1{
     font-size: 18px;
     font-weight: normal;
     color: rgba(255, 255, 255, 1);
     background-color: #37268C;
     text-align: center;
     padding: 5px;
+    margin-top: 5px
 
 }
-.carrinhoDeCompas ul{
+.carrinhoDeCompras ul{
     display: block;
     padding: 10px;
     overflow-y: scroll;
@@ -188,26 +190,25 @@ div#btnCarrinho{
     box-shadow: 0px 4px 40px -20px rgb(243 6 6 / 25%);
     border-radius: 5px;
 }
-.carrinhoDeCompas li{
+.carrinhoDeCompras li{
     display: flex;
-    justify-content: space-around;
 }
-.carrinhoDeCompas img{
+.carrinhoDeCompras img{
     width: 80px;
     height: 80px;
 }
-.carrinhoDeCompas h3{
+.carrinhoDeCompras h3{
     font-size: 16px;
 }
-.carrinhoDeCompas p{
+.carrinhoDeCompras p{
     color: #37268C;
     font-size: 14px;
     font-weight: bold;
 }
-.carrinhoDeCompas button{
+.carrinhoDeCompras button{
     border: transparent solid 1px;
 }
-.carrinhoDeCompas button:hover{
+.carrinhoDeCompras button:hover{
    border: #37268C solid 1px;
 }
 .carrinhoQuantidade{
@@ -242,4 +243,3 @@ div#btnCarrinho{
     color: #f8f8f8;
     font-weight: normal
 }   
-
