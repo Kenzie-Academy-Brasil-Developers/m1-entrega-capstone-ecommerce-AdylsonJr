@@ -3,7 +3,6 @@ let listaVitrine = document.createElement("ul")
 
 listaVitrine.classList.add("listaVitrine")
 
-
 vitrine.appendChild(listaVitrine)
 
 function criarCardVitrine(lista){
@@ -79,9 +78,7 @@ function busca (valorPesquisa){
             resultBusca.push(data[i])
         }
         if(valorPesquisa == ""){
-            for(let i = 0; i < data.length; i++){
-                resultBusca.push(data[i])
-            }
+            resultBusca.push(data[i])
         }
     }
 
@@ -149,8 +146,6 @@ carrinho.appendChild(boxTotal)
 boxTotal.appendChild(total)
 boxTotal.appendChild(totalValor)
 
-
-
 listaVitrine.addEventListener("click", intercptandoItemVitrine)
 
 let carrinhoCompras = []
@@ -178,7 +173,6 @@ function adicionarCarrinho(produto){
     quantidadeValor.innerText = carrinhoCompras.length
     totalValor.innerText = `R$${carrinhoCompras.reduce((preVal, elem) => preVal + elem.value, 0)},00`
 }
-
 
 listaCarrinho.addEventListener("click", intercptandoItemCarrinho)
 
